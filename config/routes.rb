@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   resources :people, except: [:show]
 
-  root to: "people#index"
+  root to: "homepage#home"
 
-  get 'welcome' => 'homepage#home'
+  get 'welcome' => 'people#index'
 
   get 'people/new'
 
