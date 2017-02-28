@@ -1912,3 +1912,26 @@ MONGODB | localhost:27017 | sample_app_development.find | SUCCEEDED | 0.001146s
 Completed 200 OK in 54ms (Views: 51.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2017-02-28 10:21:07 -0800
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | sample_app_development.count | STARTED | {"count"=>"people", "query"=>{}}
+MONGODB | localhost:27017 | sample_app_development.count | SUCCEEDED | 0.001199s
+MONGODB | localhost:27017 | sample_app_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | sample_app_development.find | SUCCEEDED | 0.000618s
+  Rendered people/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 618ms (Views: 602.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for ::1 at 2017-02-28 10:21:12 -0800
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.html.erb within layouts/application
+  Rendered homepage/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 30ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+

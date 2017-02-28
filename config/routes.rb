@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  devise_for :users
   resources :people, except: [:show]
 
   root to: "people#index"
