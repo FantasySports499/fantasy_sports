@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
 
-  devise_for :users
-  resources :people, except: [:show]
-
   root to: "homepage#home"
+
+  devise_for :users
+  resources :users, :people, except: [:show]
 
   get 'welcome' => 'people#index'
 
