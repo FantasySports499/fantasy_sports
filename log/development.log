@@ -2489,3 +2489,506 @@ Completed 200 OK in 410ms (Views: 400.1ms | ActiveRecord: 0.0ms)
 Completed 200 OK in 55ms (Views: 51.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2017-02-28 17:50:26 -0800
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | sample_app_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | localhost:27017 | sample_app_development.find | SUCCEEDED | 0.000936s
+  Rendered homepage/home.html.erb within layouts/application (6.7ms)
+  Rendered shared/_navigation.html.erb (6.2ms)
+Completed 200 OK in 405ms (Views: 395.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-28 17:50:43 -0800
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.html.erb within layouts/application
+MONGODB | localhost:27017 | sample_app_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | localhost:27017 | sample_app_development.find | SUCCEEDED | 0.001436s
+  Rendered homepage/home.html.erb within layouts/application (4.2ms)
+  Rendered shared/_navigation.html.erb (0.9ms)
+Completed 200 OK in 51ms (Views: 48.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-28 17:50:44 -0800
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.html.erb within layouts/application
+MONGODB | localhost:27017 | sample_app_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | localhost:27017 | sample_app_development.find | SUCCEEDED | 0.001004s
+  Rendered homepage/home.html.erb within layouts/application (2.8ms)
+  Rendered shared/_navigation.html.erb (1.4ms)
+Completed 200 OK in 53ms (Views: 50.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-02-28 17:52:31 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (29.2ms)
+  Rendered shared/_navigation.html.erb (1.6ms)
+Completed 200 OK in 410ms (Views: 395.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-03-01 13:58:28 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (36.1ms)
+  Rendered shared/_navigation.html.erb (1.4ms)
+Completed 200 OK in 536ms (Views: 522.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 13:58:31 -0800
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | sample_app_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | localhost:27017 | sample_app_development.find | SUCCEEDED | 0.051655s
+  Rendered homepage/home.html.erb within layouts/application (56.0ms)
+  Rendered shared/_navigation.html.erb (1.0ms)
+Completed 200 OK in 87ms (Views: 85.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-03-01 13:59:40 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.4ms)
+  Rendered shared/_navigation.html.erb (0.9ms)
+Completed 200 OK in 56ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 14:02:00 -0800
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.html.erb within layouts/application
+MONGODB | localhost:27017 | sample_app_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | localhost:27017 | sample_app_development.find | SUCCEEDED | 0.0011129999999999998s
+  Rendered homepage/home.html.erb within layouts/application (2.8ms)
+  Rendered shared/_navigation.html.erb (1.3ms)
+Completed 200 OK in 39ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 14:03:38 -0800
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.html.erb within layouts/application
+MONGODB | localhost:27017 | sample_app_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | localhost:27017 | sample_app_development.find | SUCCEEDED | 0.00066s
+  Rendered homepage/home.html.erb within layouts/application (2.1ms)
+  Rendered shared/_navigation.html.erb (1.2ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 14:04:29 -0800
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.html.erb within layouts/application
+MONGODB | localhost:27017 | sample_app_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | localhost:27017 | sample_app_development.find | SUCCEEDED | 0.00078s
+  Rendered homepage/home.html.erb within layouts/application (2.1ms)
+  Rendered shared/_navigation.html.erb (1.0ms)
+Completed 200 OK in 44ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-03-01 14:05:45 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.8ms)
+  Rendered shared/_navigation.html.erb (0.9ms)
+Completed 200 OK in 46ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-03-01 14:05:46 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.2ms)
+  Rendered shared/_navigation.html.erb (0.9ms)
+Completed 200 OK in 44ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2017-03-01 14:06:01 -0800
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xV1SZEQGwxT0DSM5FlogvM+wWANHQYjfj4PFvtkjbPR28kdxo4Vc4ucXbj73/7qdaP3Tcj6ljGy9fttMr6LzcA==", "user"=>{"name"=>"Juston", "email"=>"jaylind21@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameter: name
+MONGODB | localhost:27017 | sample_app_development.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"jaylind21@gmail.com"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | sample_app_development.find | SUCCEEDED | 0.002015s
+MONGODB | localhost:27017 | sample_app_development.find | STARTED | {"find"=>"users", "filter"=>{"name"=>nil}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | sample_app_development.find | SUCCEEDED | 0.000298s
+MONGODB | localhost:27017 | sample_app_development.find | STARTED | {"find"=>"users", "filter"=>{"email"=>/\Ajaylind21@gmail\.com$/i}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | sample_app_development.find | SUCCEEDED | 0.003432s
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.0ms)
+  Rendered shared/_navigation.html.erb (0.9ms)
+Completed 200 OK in 184ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-03-01 14:06:17 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.1ms)
+  Rendered shared/_navigation.html.erb (0.8ms)
+Completed 200 OK in 45ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2017-03-01 14:06:21 -0800
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (6.1ms)
+  Rendered shared/_navigation.html.erb (0.9ms)
+Completed 200 OK in 42ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-03-01 14:06:29 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.3ms)
+  Rendered shared/_navigation.html.erb (0.8ms)
+Completed 200 OK in 48ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 14:06:29 -0800
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.html.erb within layouts/application
+MONGODB | localhost:27017 | sample_app_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | localhost:27017 | sample_app_development.find | SUCCEEDED | 0.000741s
+  Rendered homepage/home.html.erb within layouts/application (3.7ms)
+  Rendered shared/_navigation.html.erb (1.2ms)
+Completed 200 OK in 47ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 14:08:22 -0800
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.html.erb within layouts/application
+MONGODB | localhost:27017 | sample_app_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | localhost:27017 | sample_app_development.find | SUCCEEDED | 0.00046s
+  Rendered homepage/home.html.erb within layouts/application (1.6ms)
+  Rendered shared/_navigation.html.erb (1.1ms)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-03-01 14:08:23 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.8ms)
+  Rendered shared/_navigation.html.erb (1.0ms)
+Completed 200 OK in 41ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-03-01 14:08:25 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.3ms)
+  Rendered shared/_navigation.html.erb (0.9ms)
+Completed 200 OK in 43ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2017-03-01 14:08:37 -0800
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A3Deqvzq7Pv+kfVVSILHv7tz2DwZ68b7c3Crk12j0tqw38u/G2lzDe2LuFKpJ12eHD5TTWAPwkhBjbVhKyJNXg==", "user"=>{"name"=>"jusotn", "email"=>"jaylind21@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameter: name
+MONGODB | localhost:27017 | sample_app_development.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"jaylind21@gmail.com"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | sample_app_development.find | SUCCEEDED | 0.00046499999999999997s
+MONGODB | localhost:27017 | sample_app_development.find | STARTED | {"find"=>"users", "filter"=>{"name"=>nil}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | sample_app_development.find | SUCCEEDED | 0.000424s
+MONGODB | localhost:27017 | sample_app_development.find | STARTED | {"find"=>"users", "filter"=>{"email"=>/\Ajaylind21@gmail\.com$/i}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | sample_app_development.find | SUCCEEDED | 0.00032900000000000003s
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.9ms)
+  Rendered shared/_navigation.html.erb (0.9ms)
+Completed 200 OK in 165ms (Views: 32.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2017-03-01 14:08:49 -0800
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dWQLclrlQOnJ8TwaRgVB3pgSNfE/kKKZrjvzXGqkz/IRa3PyS6lwAVJS3OiZPIpZUtaH+VHLnSdzxwy/itqTCA==", "user"=>{"name"=>"juston", "email"=>"jaylind21@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameter: name
+MONGODB | localhost:27017 | sample_app_development.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"jaylind21@gmail.com"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | sample_app_development.find | SUCCEEDED | 0.000517s
+MONGODB | localhost:27017 | sample_app_development.find | STARTED | {"find"=>"users", "filter"=>{"name"=>nil}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | sample_app_development.find | SUCCEEDED | 0.000339s
+MONGODB | localhost:27017 | sample_app_development.find | STARTED | {"find"=>"users", "filter"=>{"email"=>/\Ajaylind21@gmail\.com$/i}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | sample_app_development.find | SUCCEEDED | 0.00031299999999999996s
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.1ms)
+  Rendered shared/_navigation.html.erb (1.0ms)
+Completed 200 OK in 165ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2017-03-01 14:08:56 -0800
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:UsersController> at /Users/justonlind/fantasy_sports/app/controllers/users_controller.rb:2)
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+actionpack (5.0.1) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.7ms)
+Started GET "/users/sign_in" for ::1 at 2017-03-01 14:09:02 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.2ms)
+  Rendered shared/_navigation.html.erb (1.5ms)
+Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 14:09:03 -0800
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.html.erb within layouts/application
+MONGODB | localhost:27017 | sample_app_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | localhost:27017 | sample_app_development.find | SUCCEEDED | 0.000715s
+  Rendered homepage/home.html.erb within layouts/application (2.8ms)
+  Rendered shared/_navigation.html.erb (1.0ms)
+Completed 200 OK in 39ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 14:26:35 -0800
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | sample_app_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | localhost:27017 | sample_app_development.find | SUCCEEDED | 0.000907s
+  Rendered homepage/home.html.erb within layouts/application (6.3ms)
+  Rendered shared/_navigation.html.erb (7.5ms)
+Completed 200 OK in 427ms (Views: 416.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-03-01 14:26:37 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (44.6ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<User:0x007fa70e633d98>):
+     5: 
+     6:     <!--<div>
+     7:       <%= f.label :name %><br />
+     8:       <%= f.text_field :name, autofocus: true  %>
+     9:     </div> -->
+    10: 
+    11: 
+  
+app/views/devise/registrations/new.html.erb:8:in `block in _app_views_devise_registrations_new_html_erb___2055034824927131409_70177738756840'
+app/views/devise/registrations/new.html.erb:3:in `_app_views_devise_registrations_new_html_erb___2055034824927131409_70177738756840'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.5ms)
+Started GET "/users/sign_up" for ::1 at 2017-03-01 14:29:58 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/justonlind/fantasy_sports/app/views/devise/registrations/new.html.erb:9: syntax error, unexpected '<', expecting ')'
+    </div> -->
+     ^
+/Users/justonlind/fantasy_sports/app/views/devise/registrations/new.html.erb:15: syntax error, unexpected '<', expecting ')'
+  </div>
+   ^
+/Users/justonlind/fantasy_sports/app/views/devise/registrations/new.html.erb:21: syntax error, unexpected tREGEXP_BEG, expecting keyword_do or '{' or '('
+...utput_buffer.safe_append='<br />
+...                               ^
+/Users/justonlind/fantasy_sports/app/views/devise/registrations/new.html.erb:23: unknown regexp options - dv
+/Users/justonlind/fantasy_sports/app/views/devise/registrations/new.html.erb:25: syntax error, unexpected '<'
+  <div class="field">
+   ^
+/Users/justonlind/fantasy_sports/app/views/devise/registrations/new.html.erb:26: syntax error, unexpected tREGEXP_BEG, expecting keyword_do or '{' or '('
+...utput_buffer.safe_append='<br />
+...                               ^
+/Users/justonlind/fantasy_sports/app/views/devise/registrations/new.html.erb:28: unknown regexp options - dv
+/Users/justonlind/fantasy_sports/app/views/devise/registrations/new.html.erb:30: syntax error, unexpected '<'
+  <div class="actions">
+   ^
+/Users/justonlind/fantasy_sports/app/views/devise/registrations/new.html.erb:32: syntax error, unexpected '<', expecting ')'
+  </div>
+   ^
+/Users/justonlind/fantasy_sports/app/views/devise/registrations/new.html.erb:35: unknown regexp options - hard
+end pattern with unmatched parenthesis: /div>
+'.freeze; end 
+@output_buffer.safe_append='
+'.freeze;@output_buffer.append=( render "devise/
+/Users/justonlind/fantasy_sports/app/views/devise/registrations/new.html.erb:35: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...=( render "devise/shared/links" );@output_buffer.safe_append...
+...                               ^
+/Users/justonlind/fantasy_sports/app/views/devise/registrations/new.html.erb:35: unterminated string meets end of file):
+  
+app/views/devise/registrations/new.html.erb:9: syntax error, unexpected '<', expecting ')'
+app/views/devise/registrations/new.html.erb:15: syntax error, unexpected '<', expecting ')'
+app/views/devise/registrations/new.html.erb:21: syntax error, unexpected tREGEXP_BEG, expecting keyword_do or '{' or '('
+app/views/devise/registrations/new.html.erb:23: unknown regexp options - dv
+app/views/devise/registrations/new.html.erb:25: syntax error, unexpected '<'
+app/views/devise/registrations/new.html.erb:26: syntax error, unexpected tREGEXP_BEG, expecting keyword_do or '{' or '('
+app/views/devise/registrations/new.html.erb:28: unknown regexp options - dv
+app/views/devise/registrations/new.html.erb:30: syntax error, unexpected '<'
+app/views/devise/registrations/new.html.erb:32: syntax error, unexpected '<', expecting ')'
+app/views/devise/registrations/new.html.erb:35: unknown regexp options - hard
+app/views/devise/registrations/new.html.erb:35: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/devise/registrations/new.html.erb:35: unterminated string meets end of file
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.3ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.5ms)
+Started GET "/" for ::1 at 2017-03-01 14:30:13 -0800
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.html.erb within layouts/application
+MONGODB | localhost:27017 | sample_app_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | localhost:27017 | sample_app_development.find | SUCCEEDED | 0.000459s
+  Rendered homepage/home.html.erb within layouts/application (1.6ms)
+  Rendered shared/_navigation.html.erb (0.9ms)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-03-01 14:30:15 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/justonlind/fantasy_sports/app/views/devise/registrations/new.html.erb:9: syntax error, unexpected '<', expecting ')'
+    </div> -->
+     ^
+/Users/justonlind/fantasy_sports/app/views/devise/registrations/new.html.erb:15: syntax error, unexpected '<', expecting ')'
+  </div>
+   ^
+/Users/justonlind/fantasy_sports/app/views/devise/registrations/new.html.erb:21: syntax error, unexpected tREGEXP_BEG, expecting keyword_do or '{' or '('
+...utput_buffer.safe_append='<br />
+...                               ^
+/Users/justonlind/fantasy_sports/app/views/devise/registrations/new.html.erb:23: unknown regexp options - dv
+/Users/justonlind/fantasy_sports/app/views/devise/registrations/new.html.erb:25: syntax error, unexpected '<'
+  <div class="field">
+   ^
+/Users/justonlind/fantasy_sports/app/views/devise/registrations/new.html.erb:26: syntax error, unexpected tREGEXP_BEG, expecting keyword_do or '{' or '('
+...utput_buffer.safe_append='<br />
+...                               ^
+/Users/justonlind/fantasy_sports/app/views/devise/registrations/new.html.erb:28: unknown regexp options - dv
+/Users/justonlind/fantasy_sports/app/views/devise/registrations/new.html.erb:30: syntax error, unexpected '<'
+  <div class="actions">
+   ^
+/Users/justonlind/fantasy_sports/app/views/devise/registrations/new.html.erb:32: syntax error, unexpected '<', expecting ')'
+  </div>
+   ^
+/Users/justonlind/fantasy_sports/app/views/devise/registrations/new.html.erb:35: unknown regexp options - hard
+end pattern with unmatched parenthesis: /div>
+'.freeze; end 
+@output_buffer.safe_append='
+'.freeze;@output_buffer.append=( render "devise/
+/Users/justonlind/fantasy_sports/app/views/devise/registrations/new.html.erb:35: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...=( render "devise/shared/links" );@output_buffer.safe_append...
+...                               ^
+/Users/justonlind/fantasy_sports/app/views/devise/registrations/new.html.erb:35: unterminated string meets end of file):
+  
+app/views/devise/registrations/new.html.erb:9: syntax error, unexpected '<', expecting ')'
+app/views/devise/registrations/new.html.erb:15: syntax error, unexpected '<', expecting ')'
+app/views/devise/registrations/new.html.erb:21: syntax error, unexpected tREGEXP_BEG, expecting keyword_do or '{' or '('
+app/views/devise/registrations/new.html.erb:23: unknown regexp options - dv
+app/views/devise/registrations/new.html.erb:25: syntax error, unexpected '<'
+app/views/devise/registrations/new.html.erb:26: syntax error, unexpected tREGEXP_BEG, expecting keyword_do or '{' or '('
+app/views/devise/registrations/new.html.erb:28: unknown regexp options - dv
+app/views/devise/registrations/new.html.erb:30: syntax error, unexpected '<'
+app/views/devise/registrations/new.html.erb:32: syntax error, unexpected '<', expecting ')'
+app/views/devise/registrations/new.html.erb:35: unknown regexp options - hard
+app/views/devise/registrations/new.html.erb:35: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/devise/registrations/new.html.erb:35: unterminated string meets end of file
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.0ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.6ms)
+Started GET "/users/sign_up" for ::1 at 2017-03-01 14:32:13 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.6ms)
+  Rendered shared/_navigation.html.erb (0.8ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
