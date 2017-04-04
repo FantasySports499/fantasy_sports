@@ -1,5 +1,5 @@
 <div class= "container">
-
+<div class="jumbotron">
 <%= form_for(resource, class: "form-signin", as: resource_name, url: registration_path(resource_name)) do |f| %>
   <h2 class="form-signin-heading">Please sign up</h2>
   <%= devise_error_messages! %>
@@ -34,4 +34,5 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
+</div>
 </div>

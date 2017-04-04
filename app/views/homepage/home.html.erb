@@ -1,9 +1,96 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
    <div class="jumbotron">
      <div class="container">
-       <h1>Create Your Own Team Now</h1>
-       <p>Pick from over 100 players. Challenge your friends to a game.</p>
-       <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      <% if user_signed_in? %>
+      <div class= "col-md-6">
+      <% else %>
+      <div>
+      <%end%>
+        <h1>Create Your Own Team Now</h1>
+        <p>Pick from over 100 players. Challenge your friends to a game.</p>
+        <% if user_signed_in? %>
+        <p><a class="btn btn-primary btn-lg" href="newgame" role="button">Learn more &raquo;</a></p>
+        <% else %>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        <%end%>
+      </div>
+      <% if user_signed_in? %>
+      <div class="col-md-6">
+        <div class="container">
+          <h2>View Your Games </h2></div>
+          <div id="gamesTab" class="container">
+            <ul class="nav nav-pills">
+              <li class="active">
+                <a href="#1b" data-toggle="tab">Pending</a>
+              </li>
+              <li><a href="#2b" data-toggle="tab">Current</a>
+              </li>
+              <li><a href="#3b" data-toggle="tab">Played</a>
+              </li>
+            </ul>
+
+            <div class="tab-content">
+              <div class="tab-pane active clearfix scroll" id="1b">
+                <table class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                    <th>Inviter</th>
+                    <th>Picked</th>
+                    <th>Invited</th>
+                    <th>Picked</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <% if @people.size == 0 %>
+                      <tr>
+                        <td colspan="4">No players found.</td>
+                      </tr>
+                  <% else %>
+                      <% @people.each do |person| %>
+                          <tr>
+                            <td><%= person.first_name %></td>
+                            <td><%= person.last_name %></td>
+                            <td><%= person.position %></td>
+                            <td><%= person.scores %></td>
+
+                          </tr>
+                      <% end %>
+                  <% end %>
+                  </tbody>
+                </table>
+              </div>
+              <div class="tab-pane" id="2b">
+                <div class= "col-md-3">
+                  col 1
+                </div>
+                <div class= "col-md-3">
+                  col 2
+                </div>
+                <div class= "col-md-3">
+                  col 3
+                </div>
+                <div class= "col-md-3">
+                  col 4
+                </div>
+              </div>
+              <div class="tab-pane" id="3b">
+                <div class= "col-md-3">
+                  col 1
+                </div>
+                <div class= "col-md-3">
+                  col 2
+                </div>
+                <div class= "col-md-3">
+                  col 3
+                </div>
+                <div class= "col-md-3">
+                  col 4
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <% end %>
      </div>
    </div>
 
@@ -13,7 +100,7 @@
        <div class="col-md-4">
          <h2>Start a Game</h2>
          <p>Choose your sport!</p>
-         <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+         <p><a class="btn btn-default" href="newgame" role="button">View details &raquo;</a></p>
        </div>
        <div class="col-md-4">
          <h2>Invite a Friend</h2>
@@ -30,7 +117,8 @@
      <hr>
 
      <footer>
-       <p>&copy; This is a CAPSTONE project created at PLU.</p>
+       <p>This is a CAPSTONE project created at PLU.</p>
+       <p>Authors: Juston Lind & Kelly White </p>
      </footer>
    </div> <!-- /container -->
 

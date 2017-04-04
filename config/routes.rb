@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get 'welcome' => 'people#index'
 
+  get 'newgame' => 'newgame#newgame'
+
   get 'people/new'
 
   get 'people/create'

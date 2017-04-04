@@ -15,6 +15,24 @@
  *= require_tree .
  *= require_self
  */
+.jumbotron{
+  margin-top: 50px;
+
+}
+
+.vertical-center {
+
+
+  display: flex;
+  align-items: center;
+}
+
+.btn-group{
+  min-width: 50%;
+  vertical-align: middle;
+  padding: 5px;
+  margin: 10px 10px 10px 10px;
+}
 
 #flash_notice, #flash_alert {
     padding: 5px 8px;
@@ -31,4 +49,18 @@
 
 navbar{
   border-color: #101010;
+}
+
+#gamesTab .nav-pills > li > a {
+  border-radius: 4px 4px 0 0 ;
+}
+
+#gamesTab .tab-content {
+  color : #d1d1d1;
+  background-color: #428bca;
+  padding : 5px 15px;
+  height: 350px;
+  border-radius: 0 0 4px 4px ;
+  overflow-y:scroll;
+
 }
