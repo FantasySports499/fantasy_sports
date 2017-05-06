@@ -1,0 +1,12 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+ul{
+    list-style:none;
+    padding:0;
+    min-height:12em;
+}
+li:nth-child(2n){
+    background-color:#a6dbed;
+}

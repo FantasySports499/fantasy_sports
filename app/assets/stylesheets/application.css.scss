@@ -12,26 +12,43 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require jquery-ui
+ *= require jquery-ui/draggable
+ *= require jquery-ui/resizable
+ *= require jquery-ui/selectable
+ *= require jquery-ui/sortable
  *= require_tree .
  *= require_self
  */
-.jumbotron{
-  margin-top: 50px;
+#navbar{
+  color: white;
+  background-color: #878787;
 
 }
 
-.vertical-center {
+.navbar-default .navbar-nav > li > a {
+ color: white; /*Change active text color here*/
+  }
 
+  .navbar-default .navbar-header > a {
+   color: white; /*Change active text color here*/
+    }
 
-  display: flex;
-  align-items: center;
+body{
+  background-color: #878787;
+}
+
+.jumbotron{
+  margin-top: 25px;
+  min-height: 600px;
+  background-color: #dce4f2;
 }
 
 .btn-group{
   min-width: 50%;
   vertical-align: middle;
   padding: 5px;
-  margin: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 0px;
 }
 
 #flash_notice, #flash_alert {
@@ -49,6 +66,7 @@
 
 navbar{
   border-color: #101010;
+  background-color: #AF7072;
 }
 
 #gamesTab .nav-pills > li > a {
@@ -56,11 +74,117 @@ navbar{
 }
 
 #gamesTab .tab-content {
-  color : #d1d1d1;
+  font-size: 15px;
+  color : black;
   background-color: #428bca;
   padding : 5px 15px;
   height: 350px;
+  width: 550px;
   border-radius: 0 0 4px 4px ;
   overflow-y:scroll;
 
+}
+
+#gamewrap{
+  margin: 5px;
+  padding:5px;
+  width:  330px;
+  height: 450px;
+  background-color: #dce4f2;
+  font-size: 10px;
+
+}
+#games{
+  margin: 5px;
+  padding:5px;
+  width:  330px;
+  height: 425px;
+  background-color: #dce4f2;
+  overflow: scroll;
+  font-size: 10px;
+
+}
+
+#gameList{
+  font-size: 10px;
+  overflow: scroll;
+}
+
+#budget{
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#title {
+  padding: 5px;
+  margin: 5px;
+  width: 475px;
+  height: 450;
+  font-size: 25px;
+  font-weight: bold;
+  color: #606f84;
+  background-color: #dce4f2;
+
+}
+
+.players {
+  width: 450px;
+  height: 58px;
+  margin-left: 5px;
+  background-color: #2959a0;
+  border-radius: 4px;
+  overflow: scroll;
+
+}
+
+#playerTable{
+  height: 450px;
+  margin: 5px;
+  overflow: scroll;
+  background-color: white;
+}
+
+#resultTable{
+  height: 325px;
+  margin: 5px;
+  overflow: scroll;
+}
+
+
+.draft-page {
+  width: 450px;
+  height: 450px;
+}
+
+#drop_zone {
+    margin: 0 5px 5px 5px;
+    padding: 5px;
+    font-size: 1.2em;
+    width: 450px;
+    height: 450px;
+    border: 1px solid black;
+}
+
+#playerList{
+  font-size: 15px;
+}
+
+
+#droppableTest{
+  width: 150px;
+  height: 150px;
+  padding: 0.5em;
+  float:left;
+  margin: 10px;
+  background-color: blue;
+}
+
+#draggableTest{
+  width: 100px;
+  height: 100px;
+  padding: 0.5em;
+  float: left;
+  margin: 10px 10px 10px 0;
+  background-color: grey;
 }

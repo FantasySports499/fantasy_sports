@@ -1,7 +1,10 @@
 class Person
   include Mongoid::Document
-  field :first_name, type: String
-  field :last_name, type: String
-  field :position, type: String
-  field :scores, type: String
+  field :gameType, type: String
+  field :inviter, type: String
+  field :erPicked, type: String
+  field :erScore, type: String
+  field :invited, type: String
+  field :edPicked, type: String
+  field :edScore, type: String
 end

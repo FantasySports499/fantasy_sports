@@ -1,0 +1,35 @@
+  <div class="jumbotron">
+    <div class="container">
+     <h2>  Draft Your Championship Team! </h2>
+
+    <div class="col-md-6" id="title">
+      Your Team:
+      <div id="playerTable">
+        <table id="drop_zone">
+
+        </table>
+      </div>
+      Budget: <font color="green">$550</font>
+    </div>
+    <div class="col-md-6" id="title">
+      Players to Pick from:
+      <div class="container clearfix scroll" id="playerTable">
+          <table class="table table-striped" id="playerList">
+            <tbody>
+              <% @players.each do |player| %>
+                <tr>
+                  <td><%= player.position %></td>
+                  <td><%= player.name %></td>
+                  <td><%= player.team %></td>
+                  <td> $<font color="green"><%= player.value %></font></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+    </div>
+  </div>
+  <div class="col-md-12">
+    <button id="draggable" type="button" class="btn btn-primary btn-lg active ui-widget-content">Submit</button>
+  </div>
+  </div>
+</div>

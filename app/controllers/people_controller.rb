@@ -24,7 +24,7 @@ class PeopleController < ApplicationController
     @person = Person.find(params[:id])
 
     if @person.update_attributes(person_params)
-      redirect_to root_path, notice: "#{@person.first_name} #{@person.last_name} has been updated!" and return
+      redirect_to root_path, notice: "#{@person.inviter} #{@person.invited} has been updated!" and return
     end
 
     render 'edit'
@@ -34,10 +34,10 @@ class PeopleController < ApplicationController
     @person = Person.find(params[:id])
     @person.destroy
 
-    redirect_to root_path, notice: "#{@person.first_name} #{@person.last_name} has been deleted!" and return
+    redirect_to root_path, notice: "#{@person.inviter} #{@person.invited} has been deleted!" and return
   end
   private
   def person_params
-    params.require(:person).permit(:first_name, :last_name, :position, :scores)
+    params.require(:person).permit(:inviter, :erPicked, :invited, :edPicked)
   end
 end

@@ -1,0 +1,25 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+div{
+  width: 150px;
+  height: 150px;
+  border: 1px;
+}
+
+#droppable{
+  width: 150px;
+  height: 150px;
+  padding: 0.5em;
+  float:left;
+  margin: 10px;
+}
+
+#draggable{
+  width: 100px;
+  height: 100px;
+  padding: 0.5em;
+  float: left;
+  margin: 10px 10px 10px 0;
+}

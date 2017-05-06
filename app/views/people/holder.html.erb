@@ -1,0 +1,143 @@
+<div id="droppable" class="players">
+  <tr>
+    <td>QB</td>
+  </tr>
+</div>
+<div id="droppable" class="players">
+  <tr>
+    <td>RB</td>
+  </tr>
+</div>
+<div id="droppable" class="players">
+  <tr>
+    <td>RB</td>
+  </tr>
+</div>
+<div id="droppable" class="players">
+  <tr>
+    <td>WR</td>
+  </tr>
+</div>
+<div id="droppable" class="players">
+  <tr>
+    <td>WR</td>
+  </tr>
+</div>
+<div id="droppable" class="players">
+  <tr>
+    <td>K</td>
+  </tr>
+</div>
+<div id="gamesTab" class="container">
+  <ul class="nav nav-pills">
+    <li class="active">
+      <a href="#1b" data-toggle="tab">QB</a>
+    </li>
+
+    <li>
+      <a href="#2b" data-toggle="tab">RB</a>
+    </li>
+    <li>
+      <a href="#3b" data-toggle="tab">WR</a>
+    </li>
+    <li>
+      <a href="#4b" data-toggle="tab">K</a>
+    </li>
+  </ul>
+
+  <div class="tab-content draft-page">
+    <div class="tab-pane active clearfix scroll" id="1b">
+        <% if @players.size == 0 %>
+        <tr>
+          <td colspan="6">No players found.</td>
+        </tr>
+
+        <% else %>
+
+        <table class="table table-striped" id="playerList">
+          <% @players.each do |player| %>
+            <% if player.position == "QB" %>
+            <div id="draggable" class="ui-widget-content">
+              <tr border-radius="5px">
+                <td><%= player.position %></td>
+                <td><%= player.name %></td>
+                <td><%= player.team %></td>
+                <td> $<%= player.value %></td>
+              </tr>
+            </div>
+            <%end%>
+          <% end %>
+        </table>
+        <% end %>
+    </div>
+
+    <div class="tab-pane active clearfix scroll" id="2b">
+        <% if @players.size == 0 %>
+        <tr>
+          <td colspan="6">No players found.</td>
+        </tr>
+
+        <% else %>
+
+        <table class="table table-striped" id="playerList">
+          <% @players.each do |player| %>
+          <% if player.position == "RB" %>
+          <tr>
+            <td><%= player.position %></td>
+            <td><%= player.name %></td>
+            <td><%= player.team %></td>
+            <td> $<%= player.value %></td>
+          </tr>
+          <%end%>
+          <% end %>
+        </table>
+        <% end %>
+    </div>
+
+    <div class="tab-pane active clearfix scroll" id="3b">
+        <% if @players.size == 0 %>
+        <tr>
+          <td colspan="6">No players found.</td>
+        </tr>
+
+        <% else %>
+
+        <table class="table table-striped" id="playerList">
+          <% @players.each do |player| %>
+          <% if player.position == "WR" %>
+          <tr>
+            <td><%= player.position %></td>
+            <td><%= player.name %></td>
+            <td><%= player.team %></td>
+            <td> $<%= player.value %></td>
+          </tr>
+          <%end%>
+          <% end %>
+        </table>
+        <% end %>
+    </div>
+
+    <div class="tab-pane active clearfix scroll" id="4b">
+        <% if @players.size == 0 %>
+        <tr>
+          <td colspan="6">No players found.</td>
+        </tr>
+
+        <% else %>
+
+        <table class="table table-striped" id="playerList">
+          <% @players.each do |player| %>
+          <% if player.position == "K" %>
+          <tr>
+            <td><%= player.position %></td>
+            <td><%= player.name %></td>
+            <td><%= player.team %></td>
+            <td> $<%= player.value %></td>
+          </tr>
+          <%end%>
+          <% end %>
+        </table>
+        <% end %>
+    </div>
+  </div>
+</div>

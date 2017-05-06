@@ -1,0 +1,24 @@
+  <div class="jumbotron">
+    <div class="container">
+      <h3>Start a New Game!</h3>
+
+
+      <div>
+                <%= form_for :game, url:{controller: 'game', action: 'create'} do |f| %>
+                  <div class:"form_group">
+                    <%= f.label :gameType %>
+                  </div>
+                  <div class:"form_group">
+                    <%= f.select :gameType, ['Football', 'Basketball'], class: "form-control"%>
+                  </div>
+
+                  <div class:"form_group">
+                    <%= f.text_field :invited, class: "form-control", placeholder: "Recipients Email" %>
+                  </div>
+                  <div class:"form_group">
+                    <%= f.submit "Submit", class: "btn btn-primary"%>
+                  </div>
+                <%end%>
+      </div>
+    </div>
+  </div>

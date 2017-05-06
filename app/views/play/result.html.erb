@@ -1,0 +1,48 @@
+<div class="jumbotron">
+  <div class="container">
+
+         <h2>  The Results are in! </h2>
+    <div class="col-md-6" id="title">
+      Your Team:
+      <div class="container clearfix scroll" id="resultTable">
+        <table class="table table-striped" id="playerList">
+        <% @edGames.each do |edGame| %>
+          <tr>
+            <td><%= edGame.position %></td>
+            <td><%= edGame.name %></td>
+            <td><%= edGame.team %></td>
+            <% if edGame.position == "K" %>
+              <td><font color="green"><%= edGame.score * 3 %><font></td>
+            <%elsif edGame.name == "" %>
+              <td><font color="green"><%= edGame.score %><font></td>
+            <%else%>
+              <td><font color="green"><%= edGame.score * 7 %><font></td>
+            <%end%>
+          </tr>
+        <%end%>
+      </table>
+      </div>
+    </div>
+    <div class="col-md-6" id="title">
+      Opponent's Team:
+      <div class="container clearfix scroll" id="resultTable">
+        <table class="table table-striped" id="playerList">
+        <% @erGames.each do |erGame| %>
+          <tr>
+            <td><%= erGame.position %></td>
+            <td><%= erGame.name %></td>
+            <td><%= erGame.team %></td>
+            <% if erGame.position == "K" %>
+              <td><font color="green"><%= erGame.score * 3 %><font></td>
+            <%elsif erGame.name == "" %>
+              <td><font color="green"><%= erGame.score %><font></td>
+            <%else%>
+              <td><font color="green"><%= erGame.score * 7 %><font></td>
+            <%end%>
+          </tr>
+        <%end%>
+      </table>
+    </div>
+</div>
+</div>
+</div>

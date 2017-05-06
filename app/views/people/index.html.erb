@@ -10,10 +10,10 @@
 <table class="table table-bordered table-striped">
   <thead>
   <tr>
-    <th>First Name</th>
-    <th>Last Name</th>
-    <th>Position</th>
-    <th>Scores</th>
+    <th>Inviter</th>
+    <th>Picked?</th>
+    <th>Invited</th>
+    <th>Picked?</th>
     <th>&nbsp;</th>
     <th>&nbsp;</th>
   </tr>
@@ -26,15 +26,17 @@
   <% else %>
       <% @people.each do |person| %>
           <tr>
-            <td><%= person.first_name %></td>
-            <td><%= person.last_name %></td>
-            <td><%= person.position %></td>
-            <td><%= person.scores %></td>
+            <td><%= person.inviter %></td>
+            <td>
+              <%= person.erPicked %>
+            </td>
+            <td><%= person.invited %></td>
+            <td><%= person.edPicked %></td>
             <td>
               <%= link_to "Edit", edit_person_path(person), class: "btn btn-default" %>
             </td>
             <td>
-              <%= button_to "Delete", person, method: :delete, data: { confirm: "Are you sure you wish to delete #{person.first_name} #{person.last_name}?" }, class: "btn btn-danger" %>
+              <%= button_to "Delete", person, method: :delete, data: { confirm: "Are you sure you wish to delete #{person.invited} #{person.inviter}?" }, class: "btn btn-danger" %>
             </td>
           </tr>
       <% end %>

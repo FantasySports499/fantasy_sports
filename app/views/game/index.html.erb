@@ -1,0 +1,124 @@
+<div class="jumbotron">
+    <div class="container">
+                <h2>View your Games</h2>
+
+    <div class="col-md-4" id="gamewrap">
+      <h3>Pending</h3>
+      <div id="games" class="container clearfix scroll">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Inviter</th>
+              <th>Picked</th>
+              <th>Invited</th>
+              <th>Picked</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @game.each do |game| %>
+              <% if current_user.email == game.inviter || current_user.email == game.invited %>
+                <% if (game.erPicked == "0" && game.edPicked =="0") || (game.erPicked == "0" && game.edPicked =="1") || (game.erPicked == "1" && game.edPicked =="0")%>
+                  <tr>
+                    <td> <%=game.inviter%> </td>
+                    <td>
+                      <% if game.erPicked == "1" %>
+                        <input type="checkbox" checked="checked" disabled="disabled">
+                      <%else%>
+                      <input type="checkbox" disabled="disabled">
+                      <%end%>
+                    </td>
+                    <td> <%=game.invited%> </td>
+                    <td>
+                      <% if game.edPicked == "1" %>
+                        <input type="checkbox" checked="checked" disabled="disabled">
+                      <%else%>
+                      <input type="checkbox" disabled="disabled">
+                      <%end%>
+                    </td>
+                    <td><a class="btn btn-default btn-sm" href="draft_team/new?gameid=<%=@gameid2%>">Details</a></td>
+                  </tr>
+                <%end%>
+              <%end%>
+            <%end%>
+           </tbody>
+    </table>
+      </div>
+    </div>
+
+    <div class="col-md-4" id="gamewrap">
+      <h3>Current</h3>
+      <div id="games" class="container clearfix scroll">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Inviter</th>
+              <th>Picked</th>
+              <th>Invited</th>
+              <th>Picked</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @game.each do |game| %>
+              <% if current_user.email == game.inviter || current_user.email == game.invited %>
+                <% if (game.erPicked == "1" && game.edPicked =="1") && (!game.edScore && !game.erScore)%>
+                  <tr>
+                    <td> <%=game.inviter%> </td>
+                    <td>
+                      <% if game.erPicked == "1" %>
+                        <input type="checkbox" checked="checked" disabled="disabled">
+                      <%else%>
+                      <input type="checkbox" disabled="disabled">
+                      <%end%>
+                    </td>
+                    <td> <%=game.invited%> </td>
+                    <td>
+                      <% if game.edPicked == "1" %>
+                        <input type="checkbox" checked="checked" disabled="disabled">
+                      <%else%>
+                      <input type="checkbox" disabled="disabled">
+                      <%end%>
+                    </td>
+                    <td><a class="btn btn-default btn-sm" href="play/index?gameid=<%=@gameid1%>">Details</a></td>
+                  </tr>
+                <%end%>
+              <%end%>
+            <%end%>
+           </tbody>
+    </table>
+      </div>
+    </div>
+
+    <div class="col-md-4" id="gamewrap">
+      <h3>Played</h3>
+      <div id="games" class="container clearfix scroll">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Inviter</th>
+              <th>Score</th>
+              <th>Invited</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @game.each do |game| %>
+              <% if current_user.email == game.inviter || current_user.email == game.invited %>
+                <% if game.erScore && game.edScore%>
+                  <tr>
+                    <td> <%=game.inviter%> </td>
+                    <td> <%=game.erScore%> </td>
+                    <td> <%=game.invited%> </td>
+                    <td> <%=game.edScore%> </td>
+                  </tr>
+                <%end%>
+              <%end%>
+            <%end%>
+           </tbody>
+    </table>
+      </div>
+    </div>
+
+</div>
+</div>

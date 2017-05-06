@@ -11,13 +11,13 @@
         <% if user_signed_in? %>
         <p><a class="btn btn-primary btn-lg" href="newgame" role="button">Learn more &raquo;</a></p>
         <% else %>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        <p><a class="btn btn-primary btn-lg" href="../users/sign_up" role="button">Learn more &raquo;</a></p>
         <%end%>
       </div>
       <% if user_signed_in? %>
       <div class="col-md-6">
         <div class="container">
-          <h2>View Your Games </h2></div>
+          <h2><%= current_user.name%>'s Games </h2></div>
           <div id="gamesTab" class="container">
             <ul class="nav nav-pills">
               <li class="active">
@@ -43,49 +43,113 @@
                   <tbody>
                   <% if @people.size == 0 %>
                       <tr>
-                        <td colspan="4">No players found.</td>
+                        <td colspan="4">No Games found.</td>
                       </tr>
                   <% else %>
                       <% @people.each do |person| %>
+                      <% if current_user.email == person.inviter || current_user.email == person.invited %>
+                      <% if (person.erPicked == "0" && person.edPicked =="1") || (person.erPicked == "1" && person.edPicked =="0") || (person.erPicked == "0" && person.edPicked =="0")%>
                           <tr>
-                            <td><%= person.first_name %></td>
-                            <td><%= person.last_name %></td>
-                            <td><%= person.position %></td>
-                            <td><%= person.scores %></td>
+                            <td><%= person.inviter %></td>
+                            <td>
+                              <% if person.erPicked == "1" %>
+                                <input type="checkbox" checked="checked" disabled="disabled">
+                              <%else%>
+                              <input type="checkbox" disabled="disabled">
+                              <%end%>
+                            </td>
+                            <td><%= person.invited %></td>
+                            <td><% if person.edPicked == "1" %>
+                              <input type="checkbox" checked="checked" disabled="disabled">
+                            <%else%>
+                            <input type="checkbox" disabled="disabled">
+                            <%end%>
+                          </td>
 
                           </tr>
+                          <%end%>
+                          <%end%>
                       <% end %>
                   <% end %>
                   </tbody>
                 </table>
               </div>
               <div class="tab-pane" id="2b">
-                <div class= "col-md-3">
-                  col 1
-                </div>
-                <div class= "col-md-3">
-                  col 2
-                </div>
-                <div class= "col-md-3">
-                  col 3
-                </div>
-                <div class= "col-md-3">
-                  col 4
-                </div>
+                <table class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                    <th>Inviter</th>
+                    <th>Picked</th>
+                    <th>Invited</th>
+                    <th>Picked</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                <% if @people.size == 0 %>
+                    <tr>
+                      <td colspan="4">No players found.</td>
+                    </tr>
+                <%else%>
+
+                    <% @people.each do |person| %>
+                    <% if current_user.email == person.inviter || current_user.email == person.invited %>
+                      <%if person.erPicked == "1" && person.edPicked =="1"%>
+                        <tr>
+                          <td><%= person.inviter %></td>
+                          <td>
+                            <% if person.erPicked == "1" %>
+                              <input type="checkbox" checked="checked" disabled="disabled">
+                            <%else%>
+                              <input type="checkbox" disabled="disabled">
+                            <%end%>
+                          </td>
+                          <td><%= person.invited %></td>
+                          <td>
+                            <% if person.edPicked == "1" %>
+                              <input type="checkbox" checked="checked" disabled="disabled">
+                            <%else%>
+                              <input type="checkbox" disabled="disabled">
+                            <%end%>
+                          </td>
+                        </tr>
+                    <%end%>
+                    <%end%>
+                <% end %>
+                <%end%>
+              </tbody>
+            </table>
               </div>
               <div class="tab-pane" id="3b">
-                <div class= "col-md-3">
-                  col 1
-                </div>
-                <div class= "col-md-3">
-                  col 2
-                </div>
-                <div class= "col-md-3">
-                  col 3
-                </div>
-                <div class= "col-md-3">
-                  col 4
-                </div>
+                <table class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                    <th>Inviter</th>
+                    <th>Score</th>
+                    <th>Invited</th>
+                    <th>Score</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                <% if @people.size == 0 %>
+                    <tr>
+                      <td colspan="4">No players found.</td>
+                    </tr>
+                <%else%>
+                <% @people.each do |person| %>
+                <% if current_user.email == person.inviter || current_user.email == person.invited %>
+                <% if person.erScore && person.edScore %>
+                    <tr>
+                      <td><%= person.inviter %></td>
+                      <td><%= person.erScore %></td>
+                      <td><%= person.invited %></td>
+                      <td><%= person.edScore %></td>
+                    </tr>
+                  <%end%>
+                  <%end%>
+                <%end%>
+            <% end %>
+            </tbody>
+            </table>
               </div>
             </div>
           </div>
@@ -100,26 +164,33 @@
        <div class="col-md-4">
          <h2>Start a Game</h2>
          <p>Choose your sport!</p>
-         <p><a class="btn btn-default" href="newgame" role="button">View details &raquo;</a></p>
+         <% if user_signed_in? %>
+          <p><a class="btn btn-default" href="newgame" role="button">Learn more &raquo;</a></p>
+         <% else %>
+          <p><a class="btn btn-default" href="../users/sign_in" role="button">Learn more &raquo;</a></p>
+         <%end%>
        </div>
        <div class="col-md-4">
          <h2>Invite a Friend</h2>
          <p>Invite your friends and challenge their knowledge of fantasy sports!</p>
-         <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+         <% if user_signed_in? %>
+          <p><a class="btn btn-default" href="newgame" role="button">View Details &raquo;</a></p>
+         <% else %>
+          <p><a class="btn btn-default" href="../users/sign_in" role="button">View Details &raquo;</a></p>
+         <%end%>
       </div>
        <div class="col-md-4">
          <h2>Pick your Team</h2>
          <p>Select from a list of players and create the next CHAMPIONSHIP team!</p>
-         <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+         <% if user_signed_in? %>
+          <p><a class="btn btn-default" href="draft_team/new" role="button">View Details &raquo;</a></p>
+         <% else %>
+          <p><a class="btn btn-default" href="../users/sign_in" role="button">View details &raquo;</a></p>
+         <%end%>
        </div>
      </div>
 
-     <hr>
 
-     <footer>
-       <p>This is a CAPSTONE project created at PLU.</p>
-       <p>Authors: Juston Lind & Kelly White </p>
-     </footer>
    </div> <!-- /container -->
 
  

@@ -1,23 +1,25 @@
 Rails.application.routes.draw do
 
+  get 'play/index'
+
+  get 'play/result'
+
+  get 'draft_team/new'
+
+  get 'viewgame' => 'game#index'
+
+  get 'newgame' => 'game#new'
+
+  post 'game/create'
+
+  get 'game/index'
+
+
   root to: "homepage#home"
 
   devise_for :users
-  resources :users, :people, except: [:show]
+  resources :users, :game, except: [:show]
 
-  get 'welcome' => 'people#index'
-
-  get 'newgame' => 'newgame#newgame'
-
-  get 'people/new'
-
-  get 'people/create'
-
-  get 'people/edit'
-
-  get 'people/update'
-
-  get 'people/destroy'
 
 
 

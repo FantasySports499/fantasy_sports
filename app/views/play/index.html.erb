@@ -1,0 +1,39 @@
+  <div class="jumbotron">
+    <div class="container">
+
+      <h2>  Lets Play! </h2>
+    <div class="col-md-6" id="title">
+      Your Team:
+      <div class="container clearfix scroll" id="resultTable">
+        <table class="table table-striped" id="playerList">
+          <% @edGames.each do |edGame| %>
+          <tr>
+            <td><%= edGame.position %></td>
+            <td><%= edGame.name %></td>
+            <td><%= edGame.team %></td>
+            <td><font color="red">0<font></td>
+          </tr>
+          <%end%>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-6" id="title">
+      Opponent's Team:
+      <div class="container clearfix scroll" id="resultTable">
+        <table class="table table-striped" id="playerList">
+        <% @erGames.each do |erGame| %>
+          <tr>
+            <td><%= erGame.position %></td>
+            <td><%= erGame.name %></td>
+            <td><%= erGame.team %></td>
+            <td><font color="red">0<font></td>
+          </tr>
+        <%end%>
+      </table>
+    </div>
+  </div>
+  <div class="col-md-12">
+    <a id="playgame" type="button" class="btn btn-primary btn-lg active ui-widget-content" href="../play/result?gameid=<%=@gameid1%>">Sunday!</a>
+  </div>
+</div>
+</div>
